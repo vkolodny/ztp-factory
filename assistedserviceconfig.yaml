@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: assisted-service-config
+  namespace: open-cluster-management
+  labels:
+    app: assisted-service
+data:
+  CONTROLLER_IMAGE: quay.io/ocpmetal/assisted-installer-controller@sha256:770b58aef8ba09eb62e930b1fd14a39d74728bad600a813692bc07e619e920bb
+  LOG_LEVEL: "debug"
